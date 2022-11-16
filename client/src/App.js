@@ -5,11 +5,12 @@ import Contact from './pages/contact'
 import Donate from './pages/donate'
 import Home from './pages/home'
 import Links from './pages/links'
+import Nav from './components/nav'
 
 function App() {
   return (
     <div className="App">
-      <h1>This works</h1>
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
