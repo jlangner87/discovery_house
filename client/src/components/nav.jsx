@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function Nav() {
   return (
-    <div className="page">
+    <div className="nav_bar">
       <Link to={'/'}>Home</Link>
       <Link to={'/about'}>About</Link>
       <Link to={'/donate'}>Donate</Link>

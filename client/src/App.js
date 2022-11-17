@@ -6,10 +6,13 @@ import Donate from './pages/donate'
 import Home from './pages/home'
 import Links from './pages/links'
 import Nav from './components/nav'
+import Header from './components/header'
+import Footer from './components/footer'
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +21,7 @@ function App() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/links" element={<Links />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
