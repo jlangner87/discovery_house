@@ -1,16 +1,38 @@
 * {
   text-align: center;
-  background-color: gray;
-  color: white;
+  background-color: #003049;
+  color: #FEF9E6;
+  font-family: 'Antic Slab', serif;;
+}
+body {
+  width: 100%;
 }
 
 a {
   text-decoration: none;
 }
+
+.header_logo {
+  width: 25%;
+  margin-bottom: 30px;
+}
 .nav_bar {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.nav_tiles {
+  width: 315px;
+  border: 1px solid #FEF9E6;
+  border-radius: 16px;
+}
+
+.nav_tiles:hover {
+  filter: brightness(70%);
+  width: 300px ;
 }
 
 footer {
