@@ -1,5 +1,6 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
+import Header from './components/header'
 import About from './pages/about'
 import Contact from './pages/contact'
 import Donate from './pages/donate'
@@ -10,6 +11,7 @@ import Footer from './components/footer'
 function App() {
   return (
     <div className="App">
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

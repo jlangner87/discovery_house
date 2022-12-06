@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="page">
+    <div className="footer">
       <footer>©2022 Joshua Langner · All Rights Reserved</footer>
     </div>
   )
