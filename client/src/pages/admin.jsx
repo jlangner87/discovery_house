@@ -4,7 +4,7 @@ function Admin() {
   return (
     <div className="page">
       <HomeLink/>
-      <h1>This is the admin page.</h1>
+      <h1 className='page_title'>This is the admin page.</h1>
     </div>
   )
 }

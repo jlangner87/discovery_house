@@ -4,7 +4,7 @@ function Donate() {
   return (
     <div className="page">
       <HomeLink />
-      <h1>This is the Donate page</h1>
+      <h1 className="page_title">This is the Donate page</h1>
     </div>
   )
 }

@@ -4,7 +4,7 @@ function Links() {
   return (
     <div className="page">
       <HomeLink />
-      <h1>This is the Links page</h1>
+      <h1 className="page_title">This is the Links page</h1>
     </div>
   )
 }
