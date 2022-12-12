@@ -162,6 +162,27 @@ a:visited {
     width: 300px ;
   }
 
+  .feed_container {
+    width: 95%;
+    margin-top: 35px;
+    padding-bottom: 5px;
+  }
+  
+  .feed_header_container {
+    margin-bottom: 15px;
+    width: 95%;
+  }
+  
+  .feed_header {
+    padding: 10px 5px 10px 5px;
+  }
+  
+  .feed_card {
+    padding: 7px;
+    margin: 0 auto 25px auto;
+    width: 85%;
+  }
+
   .footer {
     height:50px;
     width: 99%;  
