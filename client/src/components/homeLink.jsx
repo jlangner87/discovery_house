@@ -2,8 +2,8 @@ import {NavLink} from 'react-router-dom'
 
 function HomeLink() {
   return (
-    <div>
-      <NavLink to='/' className='home_link'>Home</NavLink>
+    <div className='home_link'>
+      <NavLink to='/'>Home</NavLink>
     </div>
   )
 }
