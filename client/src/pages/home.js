@@ -3,6 +3,7 @@ import Nav from '../components/nav'
 function Home() {
   return (
     <div className="page">
+      <Nav />
       <div className="welcome_message_container">
         <p className="welcome_message_text">
           Discovery House is a safe place for homeless individuals, alcoholics
@@ -10,7 +11,6 @@ function Home() {
           completion of a treatment program.
         </p>
       </div>
-      <Nav />
     </div>
   )
 }

@@ -26,8 +26,9 @@ a:visited {
 	display: inline-block;
 	border: 4px double rgba(255,255,255,.25);
 	border-width: 4px 0;
-	padding: 1.5em 0em;
-	width: 65%;
+	padding: 15px 0 30px 0;
+  margin-bottom: 10px;
+	width: 95%;
   color: #E54B4B;
 }
 
@@ -58,9 +59,7 @@ a:visited {
 .home_link {
   padding: 5px;
   float: left;
-  margin-right: -10%;
-  margin-left: 5%;
-  margin-top: -10px;
+  margin: 5px -10% 0 5%;
 }
 
 .home_icon {
@@ -164,6 +163,7 @@ a:visited {
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-bottom: 50px;
+  margin-top: 15px;
 }
 
 .page_content_container{
@@ -175,13 +175,14 @@ a:visited {
   -webkit-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
   -moz-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
   margin: 30px auto 0 auto;
+  padding-bottom: 20px;
 }
 
 .page_content_header {
   font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 20px auto 20px auto;
+  margin: 20px auto 40px auto;
   color: #E54B4B;
 }
 
@@ -210,21 +211,6 @@ a:visited {
   text-align: left;
 }
 
-.support_banner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 75%;
-  font-style: italic;
-  margin: -5px auto 40px auto;
-  background-color: #003049;
-  padding: 1px 10px 1px 10px;
-  border-radius: 12px;
-  box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
-  -webkit-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
-  -moz-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
-}
-
 .donation_type {
   width: 85%;
   color: #E54B4B;
@@ -234,26 +220,32 @@ a:visited {
   margin-bottom: 10px;
 }
 
-.pay_icon {
-  width: 200px;
+.donation_container {
+  width: 90%;
+  margin: 50px auto 50px auto;
 }
 
-.star {
-  color: #FEF9E6;
-  padding-top: 20px;
+#paypal_container {
+  width: 87%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+#paypal {
+  width: 200px;
 }
 
 .footer {
   height:50px;
-  width: 90%;  
+  width: 95%;  
   text-align:center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   bottom: 0;
   left: 0;
-  border-top: 1px solid #FEF9E6;
+  border-top: 4px double rgba(255,255,255,.25);
   margin-top: 75px;
+  padding-bottom: 10px;
 }
 
 .footer_link {
@@ -393,6 +385,26 @@ a:visited {
   
   .board_member {
     font-size: 16px;
+  }
+
+  .donation_container {
+    width: 85%;
+    margin: 15px auto 15px auto;
+  }
+  
+  .donation_type {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  #paypal_container {
+    width: 95%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  #paypal {
+    width: 75%;
   }
 
   .footer {
