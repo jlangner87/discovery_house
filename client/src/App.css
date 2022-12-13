@@ -157,7 +157,16 @@ a:visited {
   font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin: 10px auto 20px auto;
+  margin: 20px auto 20px auto;
+  color: #E54B4B;
+}
+
+.page_content_subheader {
+  width: fit-content;  
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 20px auto 20px auto;
   color: #E54B4B;
 }
 
@@ -175,6 +184,40 @@ a:visited {
   color: #E54B4B;
   font-size: 22px;
   text-align: left;
+}
+
+.support_banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 75%;
+  font-style: italic;
+  margin: -5px auto 40px auto;
+  background-color: #003049;
+  padding: 1px 10px 1px 10px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
+  -webkit-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
+  -moz-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
+}
+
+.donation_type {
+  width: 85%;
+  color: #E54B4B;
+  font-size: 24px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.pay_icon {
+  width: 200px;
+  text-align: left;
+}
+
+.star {
+  color: #FEF9E6;
+  padding-top: 20px;
 }
 
 .footer {

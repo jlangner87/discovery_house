@@ -5,8 +5,8 @@ function Announcements() {
   return (
     <div>
       <div>
+      <HomeLink/>
         <h1 className='page_title'>Announcements</h1>
-        <HomeLink/>
         <Feed/>
       </div>
     </div>
