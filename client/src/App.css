@@ -78,8 +78,10 @@ a:visited {
 
 .nav_bar {
   width: 90%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: 25px auto 0 auto;
   padding-top: 40px;
 }
@@ -316,7 +318,7 @@ a:visited {
   }
 
   .nav_bar {
-    display: flex;
+    display: grid;
     flex-direction: column;
   }
   
