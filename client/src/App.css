@@ -68,12 +68,12 @@ a:visited {
 
 .header_logo {
   width: 25%;
-  margin: 30px auto 30px auto;
+  padding: 40px 0;
 }
 
 .logo_container {
-  margin: 0 auto 0px auto;
-  width: 90%;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .nav_bar {
@@ -225,6 +225,38 @@ a:visited {
 .donation_container {
   width: 90%;
   margin: 50px auto 50px auto;
+}
+
+#connect {
+  text-align: center;
+  color: #003049;
+}
+
+.contact_bar {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 60px;
+  background-color: #003049;
+  padding: 15px 0 0 0;
+  border-radius: 12px;
+}
+
+.contact_type {
+  width: 25%;
+}
+
+.contact_type .page_content_text {
+  font-size: 14px;
+  text-align: center;
+  color: #FEF9E6;
+  padding-top: 5px;
+}
+
+.contact_type .board_member {
+  font-size: 22px;
+  text-align: center;
 }
 
 #paypal_container {

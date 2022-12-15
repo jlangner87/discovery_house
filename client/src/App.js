@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Header from './components/header'
 import About from './pages/about'
 import Admin from './pages/admin'
-import Contact from './pages/contact'
+import Connect from './pages/contact'
 import Donate from './pages/donate'
 import Home from './pages/home'
 import Links from './pages/links'
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/admin" element={<Admin />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/connect" element={<Connect />} />
         <Route path="/announcements" element={<Announcements />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/links" element={<Links />} />
