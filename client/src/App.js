@@ -9,6 +9,7 @@ import Home from './pages/home'
 import Links from './pages/links'
 import Announcements from './pages/announcements'
 import Footer from './components/footer'
+import CRUD from './pages/crud'
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/admin" element={<Admin />} />
         <Route path="/connect" element={<Connect />} />
         <Route path="/announcements" element={<Announcements />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/links" element={<Links />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/announcement-add-edit-delete" element={<CRUD />} />
       </Routes>
       <Footer />
     </div>
