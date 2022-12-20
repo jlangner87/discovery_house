@@ -6,7 +6,7 @@ body {
   width: 100%;
   background-color: #003049;
   color: #FEF9E6;
-  font-family: 'Antic Slab', serif;
+  font-family: 'Lora', serif
 }
 
 a {
@@ -16,44 +16,6 @@ a {
 
 a:visited {
   color: #FEF9E6;
-}
-
-.marquee {
-	text-transform: uppercase;
-  font-family: 'Antic Slab', serif;
-  font-size: 22px;
-	letter-spacing: .5em;
-	display: inline-block;
-	border: 4px double rgba(255,255,255,.25);
-	border-width: 4px 0;
-	padding: 15px 0 30px 0;
-  margin-bottom: 10px;
-	width: 95%;
-  color: #E54B4B;
-}
-
-.marquee span {
-  font-family: 'Kanit', sans-serif;
-  font-size: 80px;
-  letter-spacing: 3px;
-  padding: 0px 0 10px 0;
-	display: block;
-	margin: 0 auto;
-  text-shadow: 0 0 1px rgba(255,255,255,.2);
-	background: url('./elements/marquee.png') repeat-y;
-	-webkit-background-clip: text;
-	background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: aitf 80s linear infinite;
-	transform: translate3d(0,0,0);
-	backface-visibility: hidden;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
-  }
-
-@keyframes aitf {
-	0% { background-position: 0% 50%; }
-	100% { background-position: 100% 50%; }
 }
 
 .home_link {
@@ -66,6 +28,10 @@ a:visited {
   width: 40px;
 }
 
+.header {
+  margin-bottom: 30px;
+}
+
 .header_logo {
   width: 25%;
   padding: 40px 0;
@@ -74,6 +40,34 @@ a:visited {
 .logo_container {
   margin: 0 auto;
   width: 100%;
+}
+
+.header section {
+  width: 100%;
+  background-color: #FEF9E6;
+  margin-top: -30px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+.marquee {
+  color: #003049;
+  font-size: 36px;
+  font-family: 'Cinzel', serif;
+  padding-top: 5px;
+  margin-top: 5px;
+  border-top: 4px double #003049;
+  }
+
+.marquee2 {
+  font-size: 24px;
+  color: #E54B4B;
+  font-family: 'Quattrocento', serif;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 4px double #003049;
 }
 
 .nav_bar {
@@ -94,7 +88,6 @@ a:visited {
 
 .nav_tiles:hover {
   filter: brightness(70%);
-  width: 265px ;
 }
 
 .welcome_message_container {
@@ -163,9 +156,10 @@ a:visited {
 .page_title {
   font-size: 48px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   margin-bottom: 50px;
   margin-top: 15px;
+  font-family: 'Quattrocento', serif;
 }
 
 .page_content_container{
@@ -181,6 +175,7 @@ a:visited {
 }
 
 .page_content_header {
+  font-family: 'Quattrocento', serif;
   font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -189,6 +184,7 @@ a:visited {
 }
 
 .page_content_subheader {
+  font-family: 'Quattrocento', serif;
   width: fit-content;  
   font-size: 24px;
   text-transform: uppercase;
@@ -211,6 +207,7 @@ a:visited {
   color: #E54B4B;
   font-size: 22px;
   text-align: left;
+  font-family: 'Quattrocento', serif;
 }
 
 .donation_type {
@@ -220,6 +217,7 @@ a:visited {
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-family: 'Quattrocento', serif;
 }
 
 .donation_container {
@@ -230,6 +228,7 @@ a:visited {
 #connect {
   text-align: center;
   color: #003049;
+  font-family: 'Quattrocento', serif;
 }
 
 .contact_bar {
@@ -268,16 +267,55 @@ a:visited {
   width: 200px;
 }
 
+.links_container{
+  margin: 10px;
+}
+
+.link_box{
+  margin-bottom: 20px;
+}
+
+.link_title {
+  width: 85%;
+  /* color: #E54B4B; */
+  color: #003049;
+  font-size: 24px;
+  font-family: 'Quattrocento', serif;
+  text-transform: uppercase;
+}
+
+.link_subheader {
+  font-family: 'Quattrocento', serif;
+  font-size: 24px;
+  margin-bottom: 60px;
+  margin-top: -30px;
+  color: #003049;
+}
+
+.link_splash {
+  width: 50%;
+  margin: 20px auto 30px auto;
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.52);
+  -webkit-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.52);
+  -moz-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.52);
+}
+
+.link_splash:hover {
+  filter: brightness(70%);
+}
+
 .footer {
   height:50px;
-  width: 95%;  
+  width: 100%;  
   text-align:center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   bottom: 0;
   left: 0;
-  border-top: 4px double rgba(255,255,255,.25);
+  border-top: 4px double rgba(254,249,230,.25);
   margin-top: 75px;
   padding-bottom: 10px;
 }

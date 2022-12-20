@@ -10,13 +10,10 @@ function Header() {
           className="header_logo"
         />
       </div> 
-       <p className='marquee'>
-          <span>
-            When you need a place
-          </span>
-          &mdash;We're here to help&mdash;
-        </p>
-
+      <section>
+       <h1 className='marquee'>When you need a place</h1>
+       <h3 className='marquee2'>&mdash;We're here to help&mdash;</h3>
+       </section>
     </div>
   )
 }
