@@ -279,7 +279,7 @@ a:visited {
 }
 
 .link_box{
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .link_title {
@@ -324,12 +324,22 @@ a:visited {
   border-top: 4px double rgba(254,249,230,.25);
   margin-top: 75px;
   padding-bottom: 10px;
+  font-size: 12px;
 }
 
 .footer_link {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.login_button {
+  width: 150px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 
