@@ -2,7 +2,7 @@ import Nav from '../components/nav'
 
 function Home() {
   return (
-    <div className="page">
+    <div className="home">
       <Nav />
       <div className="welcome_message_container">
         <p className="welcome_message_text">
