@@ -1,8 +1,6 @@
 const Router = require('express').Router()
+const controller = require('../controllers/EventController')
 
-Router.get('/event', (request, response) => {
-  console.log("You're in the second /hello route handler")
-  response.send('This is the Express route for EVENTS.')
-})
+Router.get('/events', controller.GetEvents)
 
 module.exports = Router
