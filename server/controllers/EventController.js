@@ -9,6 +9,28 @@ const GetEvents = async (req, res) => {
   }
 }
 
+const GetOnlyEvents = async (req, res) => {
+  try {
+    let onlyEvents = await Event.findAll({
+      where: { type: 'event' }
+    })
+    res.send(onlyEvents)
+  } catch (err) {
+    throw err
+  }
+}
+
+const GetOnlyAnnouncements = async (req, res) => {
+  try {
+    let onlyAnnouncements = await Event.findAll({
+      where: { type: 'announcement' }
+    })
+    res.send(onlyAnnouncements)
+  } catch (err) {
+    throw err
+  }
+}
+
 const PostEvent = async (req, res) => {
   try {
     let eventDetails = {
@@ -23,5 +45,7 @@ const PostEvent = async (req, res) => {
 
 module.exports = {
   GetEvents,
-  PostEvent
+  PostEvent,
+  GetOnlyEvents,
+  GetOnlyAnnouncements
 }
