@@ -6,5 +6,6 @@ Router.get('/upcoming', controller.GetOnlyEvents)
 Router.get('/announcements', controller.GetOnlyAnnouncements)
 Router.post('/events', controller.PostEvent)
 Router.delete('/delete/:event_id', controller.DeleteEvent)
+Router.patch('/edit/:event_id', controller.EditEvent)
 
 module.exports = Router

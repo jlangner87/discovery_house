@@ -55,10 +55,24 @@ const DeleteEvent = async (req, res) => {
   }
 }
 
+const EditEvent = async (req, res) => {
+  try {
+    let eventId = parseInt(req.params.event_id)
+    let editedEvent = await Event.update(req.body, {
+      where: { id: eventId },
+      returning: true
+    })
+    res.send(editedEvent)
+  } catch (err) {
+    throw err
+  }
+}
+
 module.exports = {
   GetEvents,
   PostEvent,
   GetOnlyEvents,
   GetOnlyAnnouncements,
-  DeleteEvent
+  DeleteEvent,
+  EditEvent
 }
