@@ -43,9 +43,22 @@ const PostEvent = async (req, res) => {
   }
 }
 
+const DeleteEvent = async (req, res) => {
+  try {
+    let eventId = parseInt(req.params.event_id)
+    await Event.destroy({
+      where: { id: eventId }
+    })
+    res.send('The event has been removed')
+  } catch (err) {
+    throw err
+  }
+}
+
 module.exports = {
   GetEvents,
   PostEvent,
   GetOnlyEvents,
-  GetOnlyAnnouncements
+  GetOnlyAnnouncements,
+  DeleteEvent
 }
