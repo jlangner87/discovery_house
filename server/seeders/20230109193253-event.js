@@ -16,6 +16,20 @@ module.exports = {
           type: 'announcement',
           createdAt: new Date(),
           updatedAt: new Date()
+        },
+        {
+          title: 'An event 2',
+          body: 'this is an event that is happening. Come.',
+          type: 'event',
+          createdAt: new Date(),
+          updatedAt: new Date()
+        },
+        {
+          title: 'An announcement 2',
+          body: 'this is a change be aware of it.',
+          type: 'announcement',
+          createdAt: new Date(),
+          updatedAt: new Date()
         }
       ],
       {}

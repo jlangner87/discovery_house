@@ -1,6 +1,9 @@
+const { Event, Sequelize } = require('../models')
+
 const GetEvents = async (req, res) => {
   try {
-    res.send('You have reached the event controller for GET REQUEST')
+    const all = await Event.findAll()
+    res.send(all)
   } catch (err) {
     throw err
   }
