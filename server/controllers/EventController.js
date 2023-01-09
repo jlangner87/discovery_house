@@ -9,6 +9,19 @@ const GetEvents = async (req, res) => {
   }
 }
 
+const PostEvent = async (req, res) => {
+  try {
+    let eventDetails = {
+      ...req.body
+    }
+    let newEvent = await Event.create(eventDetails)
+    res.send(newEvent)
+  } catch (err) {
+    throw err
+  }
+}
+
 module.exports = {
-  GetEvents
+  GetEvents,
+  PostEvent
 }
