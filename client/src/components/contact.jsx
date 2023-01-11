@@ -19,7 +19,7 @@ function Contact() {
     event.preventDefault()
     setFormState({ ...formState, [event.target.id]: event.target.value })
     if (event.target.value === '') {
-      setFormState({ ...formState, [event.target.id]: 0 })
+      setFormState({ ...formState, [event.target.id]: '' })
     }
   }
 
@@ -28,7 +28,7 @@ function Contact() {
     emailjs
       .send(
         'service_dabri2d',
-        'template_0fa62kt',
+        'template_6rqagiq',
         formState,
         '-g6CgSoAgcOI1wfb6'
       )
