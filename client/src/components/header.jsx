@@ -11,7 +11,7 @@ function Header() {
         />
       </div> 
       <section>
-       <h1 className='marquee'>When you need a place</h1>
+       <h1 className='marquee'>When you need a place<br/></h1>
        <h3 className='marquee2'>&mdash;We're here to help&mdash;</h3>
        </section>
     </div>
