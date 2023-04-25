@@ -1,6 +1,6 @@
 import HomeLink from '../components/homeLink'
 import Contact from '../components/contact'
-import paypal_icon from '../elements/paypal_icon.png'
+import venmo_icon from '../elements/venmo-icon.png'
 
 function Donate() {
   return (
@@ -24,10 +24,10 @@ function Donate() {
         <div className="donation_container">
           <p className="donation_type">Donate Online</p>
           <p className="page_content_text">
-            Send contributions electronically via PayPal:
+            Send contributions electronically via Venmo:
           </p>
           <div id="paypal_container">
-            <img src={paypal_icon} id="paypal" />
+            <img src={venmo_icon} id="paypal" />
           </div>
           <p className="donation_type">Donate by Mail</p>
           <p className="page_content_text">

@@ -27,7 +27,7 @@ function Contact() {
     e.preventDefault()
     emailjs
       .send(
-        'service_dabri2d',
+        'service_5loa6mu',
         'template_6rqagiq',
         formState,
         '-g6CgSoAgcOI1wfb6'

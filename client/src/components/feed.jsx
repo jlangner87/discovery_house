@@ -1,27 +1,39 @@
+import { useState, useEffect } from "react"
+import { BASE_URL } from "../globals"
+import axios from 'axios'
+
+//TODO:: restyle feed page
+//Add fields to model for url sharing and image sharing
+
 function Feed() {
-// TODO: Load API calls here. They will be mapped over to populate the feed in reverse chonological order.
+const [feed, setFeed] = useState([{}])
+useEffect(() => {
+  const loadFeed = async () => {
+    let res = await axios.get(`${BASE_URL}/api/feed`)
+    setFeed(res.data)
+  }
+  loadFeed()
+}, [])
+
+
   return (
     <div>
       <div className="feed_container">
-        <div className="feed_header_container">
-          <h1 className="feed_header">What's new?</h1>
-        </div>
+      {feed.map((post) =>
         <div className="feed_card">
-          <h3 className="feed_title">Update Title</h3>
-          <p className="feed_detail">Event Date and Time</p>
-          <p className="feed_content">Donec ac odio tempor orci dapibus ultrices in. Egestas quis ipsum suspendisse ultrices. Maecenas pharetra convallis posuere morbi. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Aenean pharetra magna ac placerat vestibulum. At in tellus integer feugiat scelerisque varius. Aliquet nec ullamcorper sit amet risus nullam eget felis. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Sapien faucibus et molestie ac.</p>
+          <h3 className="feed_title">{post.title}</h3>
+          <p className="feed_detail">{new Date(post.createdAt).toLocaleString(
+            "en-US",
+            {
+              month: "short",
+              day: "2-digit",
+              year: "numeric"
+            }
+          )}</p>
+          <p className="feed_content">{post.body}</p>
         </div>
-        <div className="feed_card">
-          <h3 className="feed_title">Update Title</h3>
-          <p className="feed_detail">Event Date and Time</p>
-          <p className="feed_content">Donec ac odio tempor orci dapibus ultrices in. Egestas quis ipsum suspendisse ultrices. Maecenas pharetra convallis posuere morbi. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Aenean pharetra magna ac placerat vestibulum. At in tellus integer feugiat scelerisque varius. Aliquet nec ullamcorper sit amet risus nullam eget felis. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Sapien faucibus et molestie ac.</p>
-        </div>
-        <div className="feed_card">
-          <h3 className="feed_title">Update Title</h3>
-          <p className="feed_detail">Event Date and Time</p>
-          <p className="feed_content">Donec ac odio tempor orci dapibus ultrices in. Egestas quis ipsum suspendisse ultrices. Maecenas pharetra convallis posuere morbi. Fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Aenean pharetra magna ac placerat vestibulum. At in tellus integer feugiat scelerisque varius. Aliquet nec ullamcorper sit amet risus nullam eget felis. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Sapien faucibus et molestie ac.</p>
-        </div>
-      </div>
+      )}
+    </div>
     </div>
   )
 }

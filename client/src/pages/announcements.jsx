@@ -1,6 +1,7 @@
 import HomeLink from "../components/homeLink"
 import Feed from "../components/feed"
 
+
 function Announcements() {
   return (
     <div>

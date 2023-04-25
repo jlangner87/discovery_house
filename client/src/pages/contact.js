@@ -12,6 +12,9 @@ function Connect() {
           Send us a message here
         </h2>
         <Contact />
+        <h2 className="board_member" id="connect">
+          Or Contact us another way
+        </h2>
         <div className="contact_bar">
           <div className="contact_type">
             <h3 className="board_member">Phone:</h3>

@@ -8,7 +8,6 @@ body {
   color: #FEF9E6;
   font-family: 'Lora', serif;
   background-color: #003049;
-  background-image: url('./elements/header_banner.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -39,31 +38,32 @@ a:visited {
 }
 
 .header_logo {
-  width: 18%;
-  padding: 40px;
-  margin: -10px auto 30px auto;
+  width: 20%;
 }
 
 .logo_container {
-  margin: 20px auto -40px auto;
   width: 100%;
+  margin: 20px auto 20px auto;
 }
 
 .header {
-  max-height: fit-content;
-  overflow-y: hidden;
+  background-image: url('./elements/header_banner.png');
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .header section {
   width: 100%;
-  background-color: #FEF9E6;
-  padding: 3px;
-  margin-bottom: -28px;
+  /* background-color: #FEF9E6; */
+  background-color: rgb(254, 249, 230, .65);
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .marquee {
   color: #003049;
-  font-size: 28px;
+  font-size: 36px;
   font-family: 'Cinzel', serif;
   padding-top: 5px;
   margin-top: 5px;
@@ -71,7 +71,7 @@ a:visited {
   }
 
 .marquee2 {
-  font-size: 16px;
+  font-size: 24px;
   color: #E54B4B;
   font-family: 'Quattrocento', serif;
   letter-spacing: 8px;
@@ -83,12 +83,10 @@ a:visited {
 
 .nav_bar {
   width: 90%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 25px auto 60px auto;
-  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 25px auto 30px auto;
+  padding-top: 20px;
 }
 
 .nav_tiles {
@@ -99,6 +97,7 @@ a:visited {
 
 .nav_tiles:hover {
   filter: brightness(70%);
+  width: 252px;
 }
 
 .welcome_message_container {
@@ -106,18 +105,28 @@ a:visited {
   width: 45%;
 }
 
-.welcome_message_text {
+.welcome_message_container p {
   font-size: 22px;
   padding: 10px;
   line-height: 175%;
   font-style: oblique;
 }
 
+.welcome_message_container img {
+  width: 80%;
+  padding: 5px;
+  border: 4px double #FEF9E6;
+  margin: 25px auto;
+  box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
+  -webkit-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
+  -moz-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
+}
+
 .feed_container {
   width: 33%;
   margin-top: 70px;
   padding-bottom: 10px;
-  background-color: #f2eedd;
+  background-color: #FEF9E6;
   color: #003049;
   border-radius: 12px;
   border: 2px solid black;
@@ -242,6 +251,7 @@ a:visited {
   text-align: center;
   color: #003049;
   font-family: 'Quattrocento', serif;
+  margin: 20px auto 10px auto;
 }
 
 .contact_bar {
@@ -249,7 +259,7 @@ a:visited {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 60px;
+  margin-top: 40px;
   background-color: #003049;
   padding: 15px 0 0 0;
   border-radius: 12px;
@@ -349,163 +359,3 @@ a:visited {
 }
 
 
-@media only screen and (max-width: 580px){
-  * {
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  .home {
-    overflow-y:hidden;
-    height: max-content;
-  }
-
-  .home_link {
-    padding: 0px;
-    float: left;
-    margin: -84% auto 5px 2.75% ;
-    position: fixed;
-  }
-  
-  .home_icon {
-    width: 40px;
-    background-color: #003049;
-    border-radius: 50%;
-  }
-
-  .header {
-    margin-bottom: 10px;
-    background-size: cover;
-  }
-  
-  .header_logo {
-    width: 60%;
-    padding: 20px 0;
-    margin-bottom: 0px;
-  }
-  
-  .logo_container {
-    margin: 0 auto;
-    width: 100%;
-  }
-  
-  .header section {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  
-  .marquee {
-    font-size: 26px;
-    padding-top: 2px;
-    border-top: 2px double #003049;
-    }
-  
-  .marquee2 {
-    font-size: 14px;
-    letter-spacing: 6px;
-    border-bottom: 2px double #003049;
-  }
-
-  .nav_bar {
-    display: grid;
-    flex-direction: column;
-    margin-top: -20px;
-    margin-bottom: -30px;
-    position: relative;
-    overflow-y: hidden;
-  }
-  
-  .nav_tiles {
-    width: 70%;
-    border: 1px solid #FEF9E6;
-    margin-bottom: 30px;
-  }
-  
-  .nav_tiles:hover {
-    filter: brightness(70%);
-  }
-
-  .welcome_message_container {
-    margin: 20px auto 40px auto;
-    width: 95%;
-  }
-  
-  .welcome_message_text {
-    font-size: 15px;
-    line-height: 150%;
-  }
-
-  .feed_container {
-    width: 95%;
-    margin-top: 35px;
-    padding-bottom: 5px;
-  }
-  
-  .feed_header_container {
-    margin-bottom: 15px;
-    width: 95%;
-  }
-  
-  .feed_header {
-    padding: 10px 5px 10px 5px;
-  }
-  
-  .feed_card {
-    padding: 7px;
-    margin: 0 auto 25px auto;
-    width: 85%;
-  }
-
-  .page_title {
-    font-size: 18px;
-    margin-bottom: 25px;
-    margin-top: 50px;
-  }
-  
-  .page_content_container{
-    width: 95%;
-    margin: 20px auto 0 auto;
-  }
-  
-  .page_content_header {
-    font-size: 28px;
-    margin: 8px auto 12px auto;
-  }
-  
-  .page_content_text {
-    margin-bottom: 15px;
-    font-size: 16px;
-  }
-  
-  .board_member {
-    font-size: 16px;
-  }
-
-  .donation_container {
-    width: 85%;
-    margin: 15px auto 15px auto;
-  }
-  
-  .donation_type {
-    font-size: 18px;
-    margin-bottom: 5px;
-    margin-top: 10px;
-  }
-
-  #paypal_container {
-    width: 95%;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  #paypal {
-    width: 75%;
-  }
-
-  .footer {
-    height:50px;
-    width: 99%;  
-    border-top: 1px solid #FEF9E6;
-    margin-top: 15px;
-    font-size: 10px;
-  }
-}
