@@ -7,7 +7,7 @@ function Announcements() {
     <div>
       <div>
       <HomeLink/>
-        <h1 className='page_title'>Announcements</h1>
+        <h1 className='page_title'>Announcements & Updates</h1>
         <Feed/>
       </div>
     </div>

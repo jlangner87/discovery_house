@@ -1,3 +1,4 @@
+const { where } = require('sequelize')
 const { Event, Sequelize } = require('../models')
 
 const GetEvents = async (req, res) => {
@@ -49,7 +50,7 @@ const DeleteEvent = async (req, res) => {
     await Event.destroy({
       where: { id: eventId }
     })
-    res.send('The event has been removed')
+    res.send('The post has been removed')
   } catch (err) {
     throw err
   }

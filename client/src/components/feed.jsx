@@ -15,14 +15,19 @@ useEffect(() => {
   loadFeed()
 }, [])
 
+const shareLink = "localhost:3000/announcements/"
 
   return (
     <div>
       <div className="feed_container">
       {feed.map((post) =>
-        <div className="feed_card">
-          <h3 className="feed_title">{post.title}</h3>
-          <p className="feed_detail">{new Date(post.createdAt).toLocaleString(
+        <div id={post.id} className="feed_card">
+          <h3>{post.title}</h3>
+          <p className="feed_card_content">{post.body}</p>
+          <p className="feed_link"><a href={post.link}>{post.linkTitle}</a></p>
+          <br/>
+          <img src={post.img}/>
+          <p className="post_date">{new Date(post.createdAt).toLocaleString(
             "en-US",
             {
               month: "short",
@@ -30,7 +35,8 @@ useEffect(() => {
               year: "numeric"
             }
           )}</p>
-          <p className="feed_content">{post.body}</p>
+          <p className="post_date">Share this</p>
+          <a href={`${shareLink}#${post.id}`}>FACEBOOK</a>
         </div>
       )}
     </div>

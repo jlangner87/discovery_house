@@ -26,7 +26,6 @@ a:visited {
   color: #FEF9E6;
 }
 
-
 .home_link {
   padding: 5px;
   float: left;
@@ -124,54 +123,71 @@ a:visited {
 
 .feed_container {
   width: 33%;
-  margin-top: 70px;
-  padding-bottom: 10px;
-  background-color: #FEF9E6;
-  color: #003049;
-  border-radius: 12px;
-  border: 2px solid black;
-  box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
-  -webkit-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
-  -moz-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
 }
 
-.feed_header_container {
+/* .feed_header_container {
   background-color: #E54B4B;
   border: 4px solid #FEF9E6;
   border-radius: 12px 12px 0 0 ;
   margin-bottom: 30px;
-}
+} */
 
-.feed_header {
+/* .feed_header {
   color: #FEF9E6;
   text-transform: uppercase;
   padding: 20px 10px 20px 10px;
-}
+} */
 
 .feed_card {
-  background-color: #FEF9E6;
+  background-color: #f3f3f2;
   padding: 15px;
-  border: 2px solid #003049;
+  border: 2px solid black;
   border-radius: 12px;
-  margin: 0 15px 50px 15px;
+  margin: 25px auto 25px auto;
   box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
   -webkit-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
   -moz-box-shadow: 10px 10px 8px -8px rgba(0,0,0,0.62);
 }
 
-.feed_title {
-  font-size: 24px;
+.feed_card h3 {
+  font-size: 28px;
   color: #E54B4B;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
-.feed_detail {
+.feed_link a {
   font-style: italic;
-  padding: 5px 0 15px 0;
+  color: #0170ac;
+  font-size: 18px;
+  text-decoration: underline;
 }
 
-.feed_content {
+.feed_link {
+  text-align: left;
+  padding: 10px;
+}
+
+.feed_card img {
+  width: 95%;
+  margin: 0px auto 0px auto;
+}
+
+.feed_card_content {
+  font-size: 18px;
+  color: #003049;
+  text-align: left;
+  padding: 10px;
+}
+
+.post_date {
+  font-style: italic;
+  padding: 10px;
+  color: #003049;
+  font-size: 14px;
   text-align: left;
 }
+
 .page {
   background-color: #003049;
 }
