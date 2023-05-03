@@ -2,9 +2,6 @@ import { useState, useEffect } from "react"
 import { BASE_URL } from "../globals"
 import axios from 'axios'
 
-//TODO:: restyle feed page
-//Add fields to model for url sharing and image sharing
-
 function Feed() {
 const [feed, setFeed] = useState([{}])
 useEffect(() => {
@@ -14,8 +11,6 @@ useEffect(() => {
   }
   loadFeed()
 }, [])
-
-const shareLink = "localhost:3000/announcements/"
 
   return (
     <div>
@@ -27,7 +22,7 @@ const shareLink = "localhost:3000/announcements/"
           <p className="feed_link"><a href={post.link}>{post.linkTitle}</a></p>
           <br/>
           <img src={post.img}/>
-          <p className="post_date">{new Date(post.createdAt).toLocaleString(
+          <p className="post_date">Posted: {new Date(post.createdAt).toLocaleString(
             "en-US",
             {
               month: "short",
@@ -35,8 +30,6 @@ const shareLink = "localhost:3000/announcements/"
               year: "numeric"
             }
           )}</p>
-          <p className="post_date">Share this</p>
-          <a href={`${shareLink}#${post.id}`}>FACEBOOK</a>
         </div>
       )}
     </div>

@@ -92,86 +92,41 @@ function About() {
         </p>
       </div>
       <div className="page_content_container">
-        <h2 className="page_content_header">Our Board of Directors</h2>
+        <h2 className="page_content_header">Meet the People</h2>
+        <h2 className="page_content_subheader">Discovery House Board</h2>
         <h4 className="board_member">
           Bob Shaw ⎯ <em>Present of Board</em>
         </h4>
-        <p className="page_content_text">
-          President of Board - former owner of Shaw’s of Okoboji, member St.
-          Mary’s Catholic Church.
-        </p>
-        <h4 className="board_member">
-          Beth Will ⎯ <em>Vice Present of Board</em>
-        </h4>
-        <p className="page_content_text">
-          Dickinson County Board of Health Director, Elderbridge Board of
-          Directors, Spirit Lake United Methodist Church member.
-        </p>
-        <h4 className="board_member">
-          Jessica Amendt ⎯ <em>Director</em>
-        </h4>
-        <p className="page_content_text">
-          She is pretty cool. I worked with her. Now she has a much better job.
-        </p>
+        <p className="page_content_text">This is a quote</p>
         <h4 className="board_member">
           Kurt Wiegers ⎯ <em>Treasurer</em>
         </h4>
-        <p className="page_content_text">
-          This is something interesting about Kurt.
-        </p>
+        <p className="page_content_text">This is a quote</p>
         <h4 className="board_member">
-          Meghan Solma ⎯ <em>Secratary of Board</em>
+          Mick McCleery ⎯ <em>Board Member</em>
         </h4>
-        <p className="page_content_text">
-          Secretary of Board - Board member of People for Pets.
-        </p>
-        <h4 className="board_member">
-          Carol Lee ⎯ <em>Board Member</em>
-        </h4>
-        <p className="page_content_text">Retired School Teacher</p>
-        <h4 className="board_member">
-          Chris Spaeth ⎯ <em>Board Member</em>
-        </h4>
-        <p className="page_content_text">
-          VP Sales and Marketing, Energy Panel Structures, Graettinger, Iowa,
-          St. Mary's Catholic Church member.
-        </p>
+        <p className="page_content_text">This is a quote</p>
         <h4 className="board_member">
           Gary Caviness ⎯ <em>Board Member</em>
         </h4>
-        <p className="page_content_text">There is some info about Gary.</p>
+        <p className="page_content_text">This is a quote</p>
         <h4 className="board_member">
-          John E. Kerber ⎯ <em>Board Member</em>
+          Beth Will ⎯ <em>Board Member</em>
         </h4>
-        <p className="page_content_text">
-          Owner Kerber Milling Company, Emmetsburg Methodist Church member,
-          Chairman Trustees.
-        </p>
+        <p className="page_content_text">This is a quote</p>
         <h4 className="board_member">
-          Matt Warnke ⎯ <em>Board Member</em>
+          Donna Davis ⎯ <em>Board Member</em>
         </h4>
-        <p className="page_content_text">
-          Immanuel Lutheran Church member, American Legion member.
-        </p>
+        <p className="page_content_text">This is a quote</p>
+        <h2 className="page_content_subheader">Discovery House Staff</h2>
         <h4 className="board_member">
-          Norm Erickson ⎯ <em>Board Member</em>
+          Jessica Amendt ⎯ <em>Executive Program Director</em>
         </h4>
-        <p className="page_content_text">
-          Something interesting about Norm goes here!
-        </p>
+        <p className="page_content_text">This is a quote</p>
         <h4 className="board_member">
-          Norman "Norm" Meinking ⎯ <em>Board Member</em>
+          Shelby Reese ⎯ <em>Assistant Director</em>
         </h4>
-        <p className="page_content_text">
-          Kiwanis member, Dickinson County Historical Society member,
-          Presbyterian Church member, Okoboji Foundation supporter.
-        </p>
-        <h4 className="board_member">
-          Patty Steffens ⎯ <em>Board Member</em>
-        </h4>
-        <p className="page_content_text">
-          Patty has an interesting tidbit that lives on this line!
-        </p>
+        <p className="page_content_text">This is a quote</p>
       </div>
     </div>
   )

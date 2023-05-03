@@ -240,6 +240,11 @@ a:visited {
   text-align: left;
 }
 
+.page_content_text a {
+  color: #0170ac;
+  text-decoration: underline;
+}
+
 .board_member {
   width: 85%;
   color: #E54B4B;
@@ -303,7 +308,9 @@ a:visited {
   margin-bottom: 30px;
 }
 #paypal {
-  width: 200px;
+  width: 375px;
+  transform: rotate(90deg);
+  padding-top: 65px;
 }
 
 .links_container{

@@ -1,8 +1,13 @@
 import HomeLink from '../components/homeLink'
 import Contact from '../components/contact'
-import venmo_icon from '../elements/venmo-icon.png'
+import venmo_icon from '../elements/qr.png'
 
 function Donate() {
+  const exitAlert = () => {
+    alert(
+      'You are now leaving the Discovery House page and navigating to an external website.'
+    )
+  }
   return (
     <div className="page">
       <HomeLink />
@@ -29,6 +34,16 @@ function Donate() {
           <div id="paypal_container">
             <img src={venmo_icon} id="paypal" />
           </div>
+          <p className="page_content_text">
+            Scan the code above or visit our &nbsp;
+            <a
+              onClick={exitAlert}
+              href="https://account.venmo.com/u/discoveryhouse"
+            >
+              Venmo page
+            </a>
+            .
+          </p>
           <p className="donation_type">Donate by Mail</p>
           <p className="page_content_text">
             Mail contributions to:
