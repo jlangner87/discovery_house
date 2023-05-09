@@ -3,6 +3,12 @@ import { BASE_URL } from "../globals"
 import axios from 'axios'
 
 function Feed() {
+  const exitAlert = () => {
+    alert(
+      'You are now leaving the Discovery House page and navigating to an external website.'
+    )
+  }
+
 const [feed, setFeed] = useState([{}])
 useEffect(() => {
   const loadFeed = async () => {
@@ -19,7 +25,7 @@ useEffect(() => {
         <div id={post.id} className="feed_card">
           <h3>{post.title}</h3>
           <p className="feed_card_content">{post.body}</p>
-          <p className="feed_link"><a href={post.link}>{post.linkTitle}</a></p>
+          <p className="feed_link"><a onClick={exitAlert} href={post.link}>{post.linkTitle}</a></p>
           <br/>
           <img src={post.img}/>
           <p className="post_date">Posted: {new Date(post.createdAt).toLocaleString(

@@ -1,8 +1,13 @@
-import HomeLink from '../components/homeLink'
+import Nav from '../components/nav'
 function About() {
+  const exitAlert = () => {
+    alert(
+      'You are now leaving the Discovery House page and navigating to an external website.'
+    )
+  }
   return (
     <div className="page">
-      <HomeLink />
+      <Nav />
       <h1 className="page_title">About Discovery House</h1>
       <div className="page_content_container">
         <h2 className="page_content_header">Our Mission</h2>

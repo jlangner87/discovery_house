@@ -11,6 +11,7 @@ import Links from './pages/links'
 import Announcements from './pages/announcements'
 import Footer from './components/footer'
 import CRUD from './pages/crud'
+import HomeTop from './components/homeTop'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/announcement-add-edit-delete" element={<CRUD />} />
       </Routes>
+      <HomeTop />
       <Footer />
     </div>
   )

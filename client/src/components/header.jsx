@@ -2,7 +2,7 @@ import dh_header from '../elements/dh_header.png'
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header" id='top'>
       <div className="logo_container">
         <img
           src={dh_header}

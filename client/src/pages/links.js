@@ -1,4 +1,4 @@
-import HomeLink from '../components/homeLink'
+import Nav from '../components/nav'
 import aa_splash from '../elements/aa_splash.png'
 import steps_splash from '../elements/steps_splash.png'
 import abuse_splash from '../elements/abuse_splash.png'
@@ -6,12 +6,14 @@ import chamber_splash from '../elements/chamber_splash.png'
 
 function Links() {
   const exitAlert = () => {
-    alert('You are about to leave the Discovery House page.')
+    alert(
+      'You are now leaving the Discovery House page and navigating to an external website.'
+    )
   }
 
   return (
     <div className="page">
-      <HomeLink />
+      <Nav />
       <h1 className="page_title">Helpful Links</h1>
       <div className="page_content_container">
         <h2 className="page_content_header">Great websites</h2>
