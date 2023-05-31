@@ -1,6 +1,8 @@
 import Nav from '../components/nav'
 import landscape from '../elements/landscape.jpg'
 
+// separate words on nav tiles
+
 function Home() {
   return (
     <div className="home">

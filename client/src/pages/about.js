@@ -1,4 +1,13 @@
 import Nav from '../components/nav'
+import flourish from '../elements/flourish.png'
+import woman from '../elements/woman.png'
+import man from '../elements/man.png'
+import mission from '../elements/mission.png'
+import historyIcon from '../elements/history.png'
+import residency from '../elements/residency.png'
+import faq from '../elements/faq.png'
+import people from '../elements/people.png'
+
 function About() {
   const exitAlert = () => {
     alert(
@@ -10,7 +19,9 @@ function About() {
       <Nav />
       <h1 className="page_title">About Discovery House</h1>
       <div className="page_content_container">
+        <img className="header_img" src={mission} />
         <h2 className="page_content_header">Our Mission</h2>
+        <img className="flourish" src={flourish} />
         <p className="page_content_text">
           Discovery House provides a safe, supportive, Christian environment for
           homeless adults and those recovering from addictions. Residents
@@ -19,7 +30,9 @@ function About() {
         </p>
       </div>
       <div className="page_content_container">
+        <img className="header_img" src={historyIcon} />
         <h2 className="page_content_header">Our History</h2>
+        <img className="flourish" src={flourish} />
         <p className="page_content_text">
           Discovery House, in Spirit Lake, Iowa, provides transitional housing
           for up to six months for homeless men and women and for those who are
@@ -40,7 +53,9 @@ function About() {
         </p>
       </div>
       <div className="page_content_container">
+        <img className="header_img" src={residency} />
         <h2 className="page_content_header">Residency Info</h2>
+        <img className="flourish" src={flourish} />
         <p className="page_content_text">
           Residents have access to shower and laundry facilities, mail delivery,
           emergency food supplement, telephone, clothing, toiletries, counseling
@@ -82,7 +97,10 @@ function About() {
         </p>
       </div>
       <div className="page_content_container">
-        <h2 className="page_content_header">General Info</h2>
+        <img className="header_img" src={faq} />
+        <h2 className="page_content_header">Frequently Asked Questions</h2>
+        <img className="flourish" src={flourish} />
+
         <p className="page_content_text">
           Discovery House is dependent upon public and private donations,
           fundraisers, and grants for operational expenses. An average of eight
@@ -97,41 +115,100 @@ function About() {
         </p>
       </div>
       <div className="page_content_container">
+        <img className="header_img" src={people} />
         <h2 className="page_content_header">Meet the People</h2>
-        <h2 className="page_content_subheader">Discovery House Board</h2>
-        <h4 className="board_member">
-          Bob Shaw ⎯ <em>Present of Board</em>
-        </h4>
-        <p className="page_content_text">This is a quote</p>
-        <h4 className="board_member">
-          Kurt Wiegers ⎯ <em>Treasurer</em>
-        </h4>
-        <p className="page_content_text">This is a quote</p>
-        <h4 className="board_member">
-          Mick McCleery ⎯ <em>Board Member</em>
-        </h4>
-        <p className="page_content_text">This is a quote</p>
-        <h4 className="board_member">
-          Gary Caviness ⎯ <em>Board Member</em>
-        </h4>
-        <p className="page_content_text">This is a quote</p>
-        <h4 className="board_member">
-          Beth Will ⎯ <em>Board Member</em>
-        </h4>
-        <p className="page_content_text">This is a quote</p>
-        <h4 className="board_member">
-          Donna Davis ⎯ <em>Board Member</em>
-        </h4>
-        <p className="page_content_text">This is a quote</p>
-        <h2 className="page_content_subheader">Discovery House Staff</h2>
-        <h4 className="board_member">
-          Jessica Amendt ⎯ <em>Executive Program Director</em>
-        </h4>
-        <p className="page_content_text">This is a quote</p>
-        <h4 className="board_member">
-          Shelby Reese ⎯ <em>Assistant Director</em>
-        </h4>
-        <p className="page_content_text">This is a quote</p>
+        <img className="flourish" src={flourish} />
+
+        <h2 className="staff_type">Discovery House Board</h2>
+        <div className="board_member_container">
+          <img className="profile-img" src={man} />
+          <h4 className="board_member">
+            Bob Shaw ⎯ <em>Present of Board</em>
+          </h4>
+          <p className="page_content_text">
+            Bio information here... It could be an interesting fact about the
+            person, a favorite quote or bible verse, or anything... or I can
+            take it out.
+          </p>
+        </div>
+        <div className="board_member_container">
+          <img className="profile-img" src={man} />
+          <h4 className="board_member">
+            Kurt Wiegers ⎯ <em>Treasurer</em>
+          </h4>
+          <p className="page_content_text">
+            Bio information here... It could be an interesting fact about the
+            person, a favorite quote or bible verse, or anything... or I can
+            take it out.
+          </p>
+        </div>
+        <div className="board_member_container">
+          <img className="profile-img" src={man} />
+          <h4 className="board_member">
+            Mick McCleery ⎯ <em>Board Member</em>
+          </h4>
+          <p className="page_content_text">
+            Bio information here... It could be an interesting fact about the
+            person, a favorite quote or bible verse, or anything... or I can
+            take it out.
+          </p>
+        </div>
+        <div className="board_member_container">
+          <img className="profile-img" src={man} />
+          <h4 className="board_member">
+            Gary Caviness ⎯ <em>Board Member</em>
+          </h4>
+          <p className="page_content_text">
+            Bio information here... It could be an interesting fact about the
+            person, a favorite quote or bible verse, or anything... or I can
+            take it out.
+          </p>
+        </div>
+        <div className="board_member_container">
+          <img className="profile-img" src={woman} />
+          <h4 className="board_member">
+            Beth Will ⎯ <em>Board Member</em>
+          </h4>
+          <p className="page_content_text">
+            Bio information here... It could be an interesting fact about the
+            person, a favorite quote or bible verse, or anything... or I can
+            take it out.
+          </p>
+        </div>
+        <div className="board_member_container">
+          <img className="profile-img" src={woman} />
+          <h4 className="board_member">
+            Donna Davis ⎯ <em>Board Member</em>
+          </h4>
+          <p className="page_content_text">
+            Bio information here... It could be an interesting fact about the
+            person, a favorite quote or bible verse, or anything... or I can
+            take it out.
+          </p>
+        </div>
+        <h2 className="staff_type">Discovery House Staff</h2>
+        <div className="board_member_container">
+          <img className="profile-img" src={woman} />
+          <h4 className="board_member">
+            Jessica Amendt ⎯ <em>Executive Program Director</em>
+          </h4>
+          <p className="page_content_text">
+            Bio information here... It could be an interesting fact about the
+            person, a favorite quote or bible verse, or anything... or I can
+            take it out.
+          </p>
+        </div>
+        <div className="board_member_container">
+          <img className="profile-img" src={woman} />
+          <h4 className="board_member">
+            Shelby Reese ⎯ <em>Assistant Director</em>
+          </h4>
+          <p className="page_content_text">
+            Bio information here... It could be an interesting fact about the
+            person, a favorite quote or bible verse, or anything... or I can
+            take it out.
+          </p>
+        </div>
       </div>
     </div>
   )
