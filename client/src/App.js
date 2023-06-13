@@ -11,6 +11,7 @@ import Links from './pages/links'
 import Announcements from './pages/announcements'
 import Footer from './components/footer'
 import CRUD from './pages/crud'
+import UpdateDelete from './pages/updateDelete'
 import HomeTop from './components/homeTop'
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/links" element={<Links />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/announcement-add-edit-delete" element={<CRUD />} />
+        <Route path="/posts/:event_id" element={<UpdateDelete />} />
       </Routes>
       <HomeTop />
       <Footer />

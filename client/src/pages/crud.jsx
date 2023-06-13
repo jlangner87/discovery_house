@@ -1,9 +1,12 @@
 import LogoutButton from '../components/LogOutButton'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL } from '../globals'
+import { useNavigate } from 'react-router-dom'
 
 function CRUD() {
+  let navigate = useNavigate
+
   let initialState = {
     title: "",
     body: "",
@@ -11,6 +14,16 @@ function CRUD() {
     link: "",
     linkTitle: ""
   }
+
+  const [feed, setFeed] = useState([{}])
+
+  useEffect(() => {
+    const loadFeed = async () => {
+      let res = await axios.get(`${BASE_URL}/api/feed`)
+      setFeed(res.data)
+    }
+    loadFeed()
+  }, [])
 
   const [formState, setFormState]= useState(initialState)
 
@@ -43,9 +56,36 @@ function CRUD() {
         <input onChange={handleChange} value={formState.link} id="link" type="url" placeholder="paste link URL here"/>
         <button type='submit'>submit</button>
         </form>
-
-
-
+      <h3>All Current Posts</h3>
+      <div className="feed_container">
+      {feed.map((post) =>
+        <div id={post.id} className="feed_card">
+ 
+          <h3>{post.title}</h3>
+          <p className="feed_card_content">{post.body}</p>
+          <p className="feed_link">{post.link}{post.linkTitle}</p>
+          <br/>
+          <img src={post.img}/>
+          <p className="post_date">Posted: {new Date(post.createdAt).toLocaleString(
+            "en-US",
+            {
+              month: "short",
+              day: "2-digit",
+              year: "numeric"
+            }
+          )}</p>
+          <p className='post_date'>SERVER ID: {post.id}</p>
+          <a href={`/posts/${post.id}`}>Update Post</a> <br/>
+          <button onClick={
+                async () => {
+                await axios.delete(`${BASE_URL}/api/delete/${post.id}`)
+                alert(`Post was deleted`)
+                window.location.reload(true)
+              }
+          }>DELETE</button>
+        </div>
+      )}
+    </div>
       </div>
       <LogoutButton/>
     </div>
@@ -53,14 +93,3 @@ function CRUD() {
 }
 
 export default CRUD
-
-
-{/* <label htmlFor="title">Title</label>
-<input onChange={handleChange} id='title' type="text" value={formState.title}/>
-<label htmlFor="content">Content</label>
-<textarea onChange={handleChange} id="content" type="text" value={formState.message}/>
-<label htmlFor="image">Image (optional)</label>
-<input onChange={handleChange} type="text" value={formState.image}/>
-<label htmlFor="link">Link (optional)</label>
-<input onChange={handleChange} type="text" value={formState.link}/>
-<button type='submit'>submit</button> */}

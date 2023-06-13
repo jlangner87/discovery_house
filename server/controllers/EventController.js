@@ -10,26 +10,21 @@ const GetEvents = async (req, res) => {
   }
 }
 
-const GetOnlyEvents = async (req, res) => {
-  try {
-    let onlyEvents = await Event.findAll({
-      where: { type: 'event' }
-    })
-    res.send(onlyEvents)
-  } catch (err) {
-    throw err
-  }
-}
+// const GetEventById = async (req, res) => {
+//   let eventId = parseInt(req.params.event_id)
+//   let selectedEvent = await Event.findOne({
+//     where: { id: eventId }
+//   })
+//   res.send(selectedEvent)
+//   res.send(`Event with id ${eventId}`)
+// }
 
-const GetOnlyAnnouncements = async (req, res) => {
-  try {
-    let onlyAnnouncements = await Event.findAll({
-      where: { type: 'announcement' }
-    })
-    res.send(onlyAnnouncements)
-  } catch (err) {
-    throw err
-  }
+const AdminView = async (req, res) => {
+  let eventId = parseInt(req.params.event_id)
+  let eventView = await Event.findOne({
+    where: { id: eventId }
+  })
+  res.send(eventView)
 }
 
 const PostEvent = async (req, res) => {
@@ -71,9 +66,8 @@ const EditEvent = async (req, res) => {
 
 module.exports = {
   GetEvents,
+  AdminView,
   PostEvent,
-  GetOnlyEvents,
-  GetOnlyAnnouncements,
   DeleteEvent,
   EditEvent
 }
