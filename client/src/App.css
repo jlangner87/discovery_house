@@ -429,12 +429,29 @@ a {
   height: 200px;
   margin-bottom: 10px;
   border-radius: 5px;
+  padding: 15px;
+  text-align: left;
 }
 
 .post_form button {
   margin: 20px auto;
   text-transform: uppercase;
   padding: 10px;
+}
+
+#update {
+  font-size: 18px;
+  color: #0170ac;
+  font-weight: 600;
+}
+
+#delete {
+  margin: 15px;
+  padding: 10px;
+  background-color: #dc1b1b;
+  color: #e6e6e6;
+  font-weight: 600;
+  border-radius: 6px;
 }
 
 

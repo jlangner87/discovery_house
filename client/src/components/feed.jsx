@@ -18,10 +18,12 @@ useEffect(() => {
   loadFeed()
 }, [])
 
+const sortedFeed = feed.sort(function (a, b) {return b.id -a.id})
+
   return (
     <div>
       <div className="feed_container">
-      {feed.map((post) =>
+      {sortedFeed.map((post) =>
         <div id={post.id} className="feed_card">
           <h3>{post.title}</h3>
           <p className="feed_card_content">{post.body}</p>
