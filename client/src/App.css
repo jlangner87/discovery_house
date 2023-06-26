@@ -1,8 +1,19 @@
+@font-face {
+  font-family: exophis;
+  src: url('./elements/Exophis-Regular.woff');
+}
+
+@font-face {
+  font-family: south-blues;
+  src: url('./elements/southblues.ttf');
+}
+
 * {
   text-align: center;
   margin: 0 auto;
   overflow-x: hidden;
 }
+
 body {
   width: 100%;
   color: #FEF9E6;
@@ -46,20 +57,22 @@ a {
 
 .marquee {
   color: #003049;
-  font-size: 42px;
-  font-family: 'Cinzel', serif;
-  padding-top: 2px;
+  font-size: 96px;
+  font-family: south-blues;
+  font-weight: 100;
   margin-top: 2px;
   border-top: 4px double #003049;
+  margin-bottom: -75px;
   }
 
 .marquee2 {
   font-size: 28px;
   color: #E54B4B;
-  font-family: 'Quattrocento', serif;
-  letter-spacing: 8px;
+  font-family: exophis;
+  font-weight: bold;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  padding-bottom: 2px;
+  padding-bottom: 25px;
   margin-bottom: 2px;
   border-bottom: 4px double #003049;
 }
@@ -171,7 +184,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 5px;
   margin: 45px auto 0px auto;
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
 }
 
 .page_content_container{
@@ -187,7 +200,7 @@ a {
 }
 
 .page_content_header {
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -196,7 +209,8 @@ a {
 }
 
 .page_content_subheader {
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
+  font-weight: bold;
   width: fit-content;  
   font-size: 24px;
   text-transform: uppercase;
@@ -230,7 +244,8 @@ a {
 }
 
 .staff_type {
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
+  font-weight: bold;
   width: fit-content;  
   font-size: 32px;
   text-transform: uppercase;
@@ -250,7 +265,8 @@ a {
   color: #E54B4B;
   font-size: 22px;
   text-align: left;
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
+  font-weight: bold;
 }
 
 .profile-img {
@@ -276,7 +292,8 @@ a {
   text-align: left;
   text-transform: uppercase;
   margin-bottom: 10px;
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
+  font-weight: bold;
 }
 
 #paypal {
@@ -293,7 +310,7 @@ a {
 #connect {
   text-align: center;
   color: #003049;
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
   margin: 40px auto 10px auto;
 }
 
@@ -335,12 +352,12 @@ a {
   width: 90%;
   color: #003049;
   font-size: 32px;
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
   text-transform: uppercase;
 }
 
 .link_subheader {
-  font-family: 'Quattrocento', serif;
+  font-family: exophis;
   font-size: 24px;
   margin-bottom: 60px;
   margin-top: -10px;
