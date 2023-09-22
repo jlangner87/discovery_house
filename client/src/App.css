@@ -41,13 +41,13 @@ a {
 
 .header section {
   width: 100%;
-  background-color: rgb(254, 249, 230, .68);
+  background-color: rgb(254, 249, 230, .83);
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
 .header_logo {
-  width: 18%;
+  width: 20%;
 }
 
 .logo_container {
@@ -57,28 +57,28 @@ a {
 
 .marquee {
   color: #003049;
-  font-size: 96px;
+  font-size: 64px;
   font-family: south-blues;
   font-weight: 100;
   margin-top: 2px;
   border-top: 4px double #003049;
-  margin-bottom: -75px;
+  margin-bottom: -50px;
   }
 
 .marquee2 {
-  font-size: 28px;
+  font-size: 22px;
   color: #E54B4B;
   font-family: exophis;
-  font-weight: bold;
+  font-weight: bolder;
   letter-spacing: 4px;
   text-transform: uppercase;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
   margin-bottom: 2px;
   border-bottom: 4px double #003049;
 }
 
 .nav_bar {
-  width: 75%;
+  width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   margin: 15px auto 15px auto;

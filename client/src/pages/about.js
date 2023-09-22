@@ -53,6 +53,18 @@ function About() {
         </p>
       </div>
       <div className="page_content_container">
+        <h2 className="page_content_header">Locations</h2>
+        <img className="flourish" src={flourish} />
+        <h2 className="staff_type">Spirit Lake, Iowa</h2>
+        <p className="page_content_text">123 Some Street</p>
+        <p className="page_content_text">Spirit Lake, IA 51360</p>
+        <p className="page_content_text">Place a map here</p>
+        <h2 className="staff_type">Spencer, Iowa</h2>
+        <p className="page_content_text">123 Some Street</p>
+        <p className="page_content_text">Spencer, IA 51301</p>
+        <p className="page_content_text">Place a map here</p>
+      </div>
+      <div className="page_content_container">
         <img className="header_img" src={residency} />
         <h2 className="page_content_header">Residency Info</h2>
         <img className="flourish" src={flourish} />
